@@ -24,6 +24,14 @@ public class Main {
         }
 
         result = product(nums, key - 1); // key needs to be subtracted by 1 to ensure staying in bounds of method
-        System.out.println("The product of all numbers is: " + result);
+        for (int i = 0; i < nums.length; i++) {
+            if (i == nums.length - 1) {
+                System.out.print(nums[i] + " ");
+            }
+            else {
+                System.out.print(nums[i] + " x ");
+            }
+        }
+        System.out.println("= " + result);
     }
 }
